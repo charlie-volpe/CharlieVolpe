@@ -16,14 +16,20 @@
 }
 
 .icon-menu{
-	position: absolute;
+	float: right;
 	top: 0px;
 	right: 35px;
 	color: #333;
 }
 
+.icon-menu:after{
+	content: "";
+	clear:both;
+}
+
 .icon-menu:hover{
 	color: #aaa;
+	cursor: pointer;
 }
 
 .icon-menu:after{
@@ -42,7 +48,16 @@ body{
 	background: #f7f7f7;
 }
 
+a{
+	color: #333;
+}
+
+a:hover{
+	color: #aaa;
+}
+
 h1{
+	color: #333;
 	font-weight: bold;
 }
 
