@@ -50,9 +50,11 @@ body{
 
 a{
 	color: #333;
+	outline: none;
 }
 
-a:hover{
+a:hover,
+a:focus{
 	color: #aaa;
 }
 
@@ -95,6 +97,23 @@ label{
 	width: 13em;
 	display: block;
 	overflow: hidden;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 35px;
+	border: 1px solid #ccc;
+	background: white;
+	font-family: Roboto, sans-serif;
+	color: #666;
+	font-size: 0.9em;
+	outline: none;	
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 10px #aaa;
 }
 
 #slidein-menu{
