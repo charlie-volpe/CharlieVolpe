@@ -13,10 +13,11 @@
 	<div class="site-wrapper">
 		<div id="site-title">
 			<div class="row">
-				<div class="small-12 columns">
+				<div class="small-11 columns">
 					<h1>Charlie Volpe</h1>
 				</div>
 			</div>
+			<div class="icon-menu"></div>
 		</div>
 		<div id="main-content">
 			<div class="row">
@@ -40,7 +41,21 @@
 		</div>
 	</div>
 	<div id="slidein-menu">
-
+		<a href="index.html">
+			<div class="slidein-menu-item">
+				Home
+			</div>
+		</a>
+		<a>
+			<div class="slidein-menu-item">
+				About
+			</div>
+		</a>
+		<a>
+			<div class="slidein-menu-item">
+				UX Design
+			</div>
+		</a>
 	</div>
 
 	<script src="js/vendor/jquery.js"></script>
@@ -49,22 +64,28 @@
   	var $toggle_menu = false;
 
     $(document).foundation();
-    $(document.body).click(function(){
+    $(".icon-menu").click(function(){
     	if($toggle_menu){
     		$("#slidein-menu").animate(
 		            {"right": "-200px"},
-		            250);
+		            250).css('box-shadow', 'none');
 		  	$("#site-body").animate(
-		            {"left": "0px"},
+		            {"left": "0px", "opacity": "1"},
+	            	250);
+		  	$(".site-wrapper").animate(
+		            {"opacity": "1"},
 	            	250);
 		  	$toggle_menu = false;
     	}
     	else{
 	    	$("#slidein-menu").animate(
 		            {"right": "0px"},
-		            250);
+		            250).css('box-shadow', '-1px 0px 10px #333');
 		  	$("#site-body").animate(
-		            {"left": "-200px"},
+		            {"left": "-180px"},
+	            	250);
+		  	$(".site-wrapper").animate(
+		            {"opacity": "0.6"},
 	            	250);
 		  	$toggle_menu = true;
 		  }
