@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body id="site-body">
 	<div class="site-wrapper">
 		<div id="site-title">
 			<div class="row">
@@ -39,11 +39,22 @@
 			</div>
 		</div>
 	</div>
+	<div id="slidein-menu">
+
+	</div>
 
 	<script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
   <script>
     $(document).foundation();
+    $(document.body).click(function(){
+    	$("#slidein-menu").animate(
+	            {"left": "75%"},
+	            250);
+	  	$("#site-body").animate(
+	            {"left": "-25%"},
+	            250);
+    });
   </script>
 </body>
 </html>

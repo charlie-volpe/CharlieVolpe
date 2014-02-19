@@ -37,6 +37,16 @@ h1{
 	overflow: hidden;
 }
 
+#slidein-menu{
+	position: fixed;
+	top: 0px;
+	left: 100%;
+	bottom: 0px;
+	width: 25%;
+	background: #333;
+	z-index: 9999;
+}
+
 @media (max-width: 441px){
 	#main-content > .row > .columns > img{
 		padding: 0px 0px 20px 0px;
