@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'menu-font';
+	src: url('../font/menu.eot?98903651');
+  src: url('../font/menu.eot?98903651#iefix') format('embedded-opentype'),
+       url('../font/menu.woff?98903651') format('woff'),
+       url('../font/menu.ttf?98903651') format('truetype'),
+       url('../font/menu.svg?98903651#fontello') format('svg');
+	font-weight: normal; font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'menu-font';
+	font-style: normal;
+	font-size: 3em;
+	speak: none;
+}
+
+.icon-menu{
+	float: right;
+	top: 0px;
+	right: 35px;
+	color: #333;
+}
+
+.icon-menu:after{
+	content: "";
+	clear:both;
+}
+
+.icon-menu:hover{
+	color: #aaa;
+	cursor: pointer;
+}
+
+.icon-menu:after{
+	content: "\e800";
+	font-size: 0.7em;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+	font-family: Roboto, sans-serif;
+	background: #f7f7f7;
+}
+
+a{
+	color: #333;
+	outline: none;
+}
+
+a:hover,
+a:focus{
+	color: #aaa;
+}
+
+h1{
+	color: #333;
+	font-weight: bold;
+}
+
+h3{
+	color: #333;
+	font-weight: bold;
+}
+
+label{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.site-wrapper {
+	margin: 20px;
+}
+
+#main-content > .row > .columns > p{
+
+}
+
+#main-content > .row > .columns > img{
+	float: left;
+	padding: 0px 20px 20px 0px;
+}
+
+#main-content > .row > .columns > img:after{
+	clear: both;
+}
+
+#main-content > .row > .columns > p:before{
+	content: "";
+	height: 0px;
+	width: 13em;
+	display: block;
+	overflow: hidden;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 35px;
+	border: 1px solid #ccc;
+	background: white;
+	font-family: Roboto, sans-serif;
+	color: #666;
+	font-size: 0.9em;
+	outline: none;	
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 10px #aaa;
+}
+
+#slidein-menu{
+	position: fixed;
+	top: 0px;
+	right: -200px;
+	bottom: 0px;
+	width: 200px;
+	background: #333;
+	z-index: 9999;
+}
+
+.slidein-menu-item{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	color: #f7f7f7;
+	box-shadow: 0px 1px 0px #555, inset 0px -1px 0px #000;
+}
+
+.slidein-menu-item:hover{
+	color: #999;
+	background: #252525;
+}
+
+@media (max-width: 441px){
+	#main-content > .row > .columns > img{
+		padding: 0px 0px 20px 0px;
+	}
+}
