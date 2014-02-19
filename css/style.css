@@ -1,4 +1,12 @@
-#main-content {
+body{
+	font-family: Roboto, sans-serif;
+}
+
+h1{
+	font-weight: bold;
+}
+
+.site-wrapper {
 	margin: 20px;
 }
 
@@ -9,10 +17,18 @@
 #main-content > .row > .columns > img{
 	float: left;
 	padding: 0px 20px 20px 0px;
+	width: 100%;
+	max-width: 300px;
 }
 
 #main-content > .row > .columns > img:after{
 	content: "";
 	height: 0px;
 	clear: both;
+}
+
+@media (max-width: 441px){
+	#main-content > .row > .columns > img{
+		padding: 0px 0px 20px 0px;
+	}
 }
