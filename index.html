@@ -3,9 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Charlie Volpe</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.min.css">
-	<link rel="stylesheet" href="css/foundation.css" />
-  <script src="js/vendor/modernizr.js"></script>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -50,12 +49,9 @@
 		</a>
 	</div>
 
-	<script src="js/vendor/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
   <script>
   	var $toggle_menu = false;
 
-    $(document).foundation();
     $(".icon-menu").click(function(){
     	if($toggle_menu){
     		$("#slidein-menu").animate(
