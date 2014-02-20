@@ -1,3 +1,4 @@
+/* -- Custom Web Font Icons || START || -- */
 @font-face {
 	font-family: 'menu-font';
 	src: url('../font/menu.eot?98903651');
@@ -37,18 +38,13 @@
 	font-size: 0.7em;
 }
 
+/* -- Custom Web Font Icons || END || -- */
+
+/* -- Non-abstract / Specific || START || -- */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-html{
-	background: #f7f7f7 url(../img/debut_light.png) repeat center top;
-}
-
-body{
-	font-family: Roboto, sans-serif;
 }
 
 a{
@@ -59,35 +55,6 @@ a{
 a:hover,
 a:focus{
 	color: #aaa;
-}
-
-h1{
-	color: #333;
-	font-weight: bold;
-}
-
-h3{
-	color: #333;
-	font-weight: bold;
-}
-
-label{
-	position: absolute;
-	top: -9999px;
-	left: -9999px;
-}
-
-.site-wrapper {
-	margin: 20px;
-}
-
-#main-content > .row > .columns > p{
-
-}
-
-#main-content > .row > .columns > img{
-	float: left;
-	padding: 0px 20px 20px 0px;
 }
 
 #main-content > .row > .columns > img:after{
@@ -146,8 +113,63 @@ input[type="submit"]:focus{
 	background: #252525;
 }
 
-@media (max-width: 441px){
-	#main-content > .row > .columns > img{
-		padding: 0px 0px 20px 0px;
-	}
+/* -- Non-abstract || END || -- */
+
+/* -- Abstract / Modular || START || -- */
+/* block stylings [bgs, colors, etc.] */
+.bg-main{
+	background: #f7f7f7 url(../img/debut_light.png) repeat center top;
 }
+
+.color-light{
+	color: #aaa;
+}
+
+.color-dark{
+	color: #333;
+}
+
+.no-out{
+	outline: none;
+}
+
+/* font stylings */
+.font-robo{
+	font-family: Roboto, sans-serif;
+}
+
+.wgt-bold{
+	font-weight: bold;
+}
+
+/* spacing stylings */
+.m-20px{
+	margin: 20px;
+}
+
+/* float stylings */
+.fl-right{
+	float: right;
+}
+
+.fl-left{
+	float: left;
+}
+
+.clr-both{
+	clear: both;
+}
+
+/* special interaction stylings */
+.curs-point{
+	cursor: pointer;
+}
+
+/* custom complex stylings */
+.hide{
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/* Abstract / Modular || END || */
