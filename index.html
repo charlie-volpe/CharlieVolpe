@@ -8,77 +8,19 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body id="site-body" class="font-robo bg-light">
+<body id="site-body">
 
-	<div id="site-wrapper" class="m-20">
+	<div id="site-wrapper">
 
 		<div id="site-title">
-			<div class="row">
-				<div class="small-12 columns">
-					<div class="icon-menu fl-right color-dark rgt-35"></div>
-					<h1 class="color-dark wgt-bold"><a href="index.html">Charlie Volpe</a></h1>
-				</div>
-			</div>
+
 		</div>
 
 		<div id="main-content">
-			<div class="row">
-				<div class="small-12 columns">
-					
-				</div>
-			</div>
+
 		</div>
 		
 	</div>
-	
-	<div id="slidein-menu" class="pos-fix bg-dark z-front">
-		<a href="index.html">
-			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
-				Home
-			</div>
-		</a>
-		<a href="pages/about/index.html">
-			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
-				About
-			</div>
-		</a>
-		<a href="pages/contactme/index.html">
-			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
-				Contact Me
-			</div>
-		</a>
-	</div>
-
-  <script>
-  	var $toggle_menu = false;
-
-    $(".icon-menu").click(function(){
-    	if($toggle_menu){
-    		$("#slidein-menu").animate(
-		            {"right": "-200px"},
-		            250).css('box-shadow', 'none');
-		  	$("#site-body").animate(
-		            {"left": "0px", "opacity": "1"},
-	            	250);
-		  	$(".site-wrapper").animate(
-		            {"opacity": "1"},
-	            	250);
-		  	$toggle_menu = false;
-    	}
-    	else{
-	    	$("#slidein-menu").animate(
-		            {"right": "0px"},
-		            250).css('box-shadow', '-1px 0px 10px #333');
-		  	$("#site-body").animate(
-		            {"left": "-180px"},
-	            	250);
-		  	$(".site-wrapper").animate(
-		            {"opacity": "0.6"},
-	            	250);
-		  	$toggle_menu = true;
-		  }
-    });
-  </script>
 
 </body>
 </html>

@@ -8,94 +8,19 @@
 
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
-<body id="site-body" class="font-robo bg-light">
+<body id="site-body">
 
-	<div class="site-wrapper" class="m-20">
+	<div id="site-wrapper">
 
 		<div id="site-title">
-			<div class="row">
-				<div class="small-12 columns">
-					<div class="icon-menu fl-right color-dark rgt-35"></div>
-					<h1 class="color-dark wgt-bold"><a href="../../index.html">Charlie Volpe</a></h1>
-				</div>
-			</div>
+
 		</div>
 
 		<div id="main-content">
-			<div class="row">
-				<div class="small-12 columns">
-					<h3 class="color-dark wgt-bold">Contact Me</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="medium-6 small-12 columns">
-				<p>
-					Feel free to contact me if you want to grab some coffe or if you just want to chat. I am located in the San Francisco Bay Area, CA.
-				</p>
-				</div>
-				<div class="medium-6 small-12 columns">
-					<label class="hide" for="name-input">Name</label>
-					<input id="name-input" type="text" name="contact" placeholder="Name..." autofocus="true" />
-					<label class="hide" for="email-input">Email</label>
-					<input id="email-input" type="text" name="contact" placeholder="Email..." />
-					<label class="hide" for="message-input">Message</label>
-					<textarea id="message-input" name="contact" style="height: 200px;" placeholder="Message..."></textarea>
-					<label class="hide" for="submit-input">Send Email</label>
-					<input id="submit-input" type="submit" name="contact" value="Send" class="font-robo bg-white brd-thin-mid color-mid-dark ft-size-0_9 no-out" />
-				</div>
-			</div>
+
 		</div>
 
 	</div>
-	
-	<div id="slidein-menu" class="pos-fix bg-dark z-front">
-		<a href="../../index.html">
-			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
-				Home
-			</div>
-		</a>
-		<a href="../about/index.html">
-			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
-				About
-			</div>
-		</a>
-		<a href="index.html">
-			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
-				Contact Me
-			</div>
-		</a>
-	</div>
-
-  <script>
-  	var $toggle_menu = false;
-
-    $(".icon-menu").click(function(){
-    	if($toggle_menu){
-    		$("#slidein-menu").animate(
-		            {"right": "-200px"},
-		            250).css('box-shadow', 'none');
-		  	$("#site-body").animate(
-		            {"left": "0px", "opacity": "1"},
-	            	250);
-		  	$(".site-wrapper").animate(
-		            {"opacity": "1"},
-	            	250);
-		  	$toggle_menu = false;
-    	}
-    	else{
-	    	$("#slidein-menu").animate(
-		            {"right": "0px"},
-		            250).css('box-shadow', '-1px 0px 10px #333');
-		  	$("#site-body").animate(
-		            {"left": "-180px"},
-	            	250);
-		  	$(".site-wrapper").animate(
-		            {"opacity": "0.6"},
-	            	250);
-		  	$toggle_menu = true;
-		  }
-    });
-  </script>
   
 </body>
 </html>
