@@ -9,20 +9,23 @@
 
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
-<body id="site-body">
-	<div class="site-wrapper">
+<body id="site-body" class="font-robo bg-light">
+
+	<div class="site-wrapper" class="m-20">
+
 		<div id="site-title">
 			<div class="row">
 				<div class="small-12 columns">
-					<div class="icon-menu"></div>
-					<h1><a href="../../index.html">Charlie Volpe</a></h1>
+					<div class="icon-menu fl-right color-dark rgt-35"></div>
+					<h1 class="color-dark wgt-bold"><a href="../../index.html">Charlie Volpe</a></h1>
 				</div>
 			</div>
 		</div>
+
 		<div id="main-content">
 			<div class="row">
 				<div class="small-12 columns">
-					<h3>Contact Me</h3>
+					<h3 class="color-dark wgt-bold">Contact Me</h3>
 				</div>
 			</div>
 			<div class="row">
@@ -32,31 +35,33 @@
 				</p>
 				</div>
 				<div class="medium-6 small-12 columns">
-					<label for="name-input">Name</label>
+					<label class="hide" for="name-input">Name</label>
 					<input id="name-input" type="text" name="contact" placeholder="Name..." autofocus="true" />
-					<label for="email-input">Email</label>
+					<label class="hide" for="email-input">Email</label>
 					<input id="email-input" type="text" name="contact" placeholder="Email..." />
-					<label for="message-input">Message</label>
+					<label class="hide" for="message-input">Message</label>
 					<textarea id="message-input" name="contact" style="height: 200px;" placeholder="Message..."></textarea>
-					<label for="submit-input">Send Email</label>
-					<input id="submit-input" type="submit" name="contact" value="Send" />
+					<label class="hide" for="submit-input">Send Email</label>
+					<input id="submit-input" type="submit" name="contact" value="Send" class="font-robo bg-white brd-thin-mid color-mid-dark ft-size-0_9 no-out" />
 				</div>
 			</div>
 		</div>
+
 	</div>
-	<div id="slidein-menu">
+	
+	<div id="slidein-menu" class="pos-fix bg-dark z-front">
 		<a href="../../index.html">
-			<div class="slidein-menu-item">
+			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
 				Home
 			</div>
 		</a>
 		<a href="../about/index.html">
-			<div class="slidein-menu-item">
+			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
 				About
 			</div>
 		</a>
 		<a href="index.html">
-			<div class="slidein-menu-item">
+			<div class="menu-item btm-groove hgt-50 ln-hgt-50 color-light txt-center dis-blk pos-rel">
 				Contact Me
 			</div>
 		</a>
@@ -95,5 +100,6 @@
 		  }
     });
   </script>
+  
 </body>
 </html>
