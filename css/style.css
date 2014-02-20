@@ -1,3 +1,199 @@
+/* -- Abstract / Modular || START || -- */
+/* color stylings [bgs, colors, etc.] */
+.bg-white{
+	background: white;
+}
+
+.bg-light{
+	background: #f7f7f7 url(../img/debut_light.png) repeat center top;
+}
+
+.bg-dark{
+	background: #333 url(../img/debut_dark.png) repeat center top;
+}
+
+.color-light{
+	color: #f7f7f7;
+}
+
+.color-mid{
+	color: #aaa;
+}
+
+.color-mid-dark{
+	color: #666;
+}
+
+.color-dark{
+	color: #333;
+}
+
+.no-out{
+	outline: none;
+}
+
+.brd-thin-mid{
+	border: 1px solid #ccc;
+}
+
+.btm-groove{
+	box-shadow: 0px 1px 0px #555, inset 0px -1px 0px #000;
+}
+
+/* text stylings */
+.font-robo{
+	font-family: Roboto, sans-serif;
+}
+
+.wgt-bold{
+	font-weight: bold;
+}
+
+.txt-center{
+	text-align: center;
+}
+
+/* spacing stylings */
+.m-20px{
+	margin: 20px;
+}
+
+.ft-size-0_9{
+	font-size: 0.9em;
+}
+
+/* sizing stylings */
+.hgt-50{
+	height: 50px;
+}
+
+.ln-hgt-50{
+	line-height: 50px;
+}
+
+.wid-full{
+	width: 100%;
+}
+
+.rgt-35{
+	right: 35px;
+}
+
+/* placement stylings */
+.fl-right{
+	float: right;
+}
+
+.fl-left{
+	float: left;
+}
+
+.clr-both{
+	clear: both;
+}
+
+.pos-rel{
+	position: relative;
+}
+
+.pos-fix{
+	position: fixed;
+}
+
+.pos-abs{
+	position: absolute;
+}
+
+.dis-blk{
+	display: block;
+}
+
+.z-front{
+	z-index: 9999;
+}
+
+/* interaction stylings */
+.curs-point{
+	cursor: pointer;
+}
+
+/* custom complex stylings */
+.hide{
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/* Abstract / Modular || END || */
+
+/* -- Non-abstract / Specific || START || -- */
+/* very specific */
+#slidein-menu{
+	top: 0px;
+	right: -200px;
+	bottom: 0px;
+	width: 200px;
+}
+
+#main-content > .row > .columns img:after{
+	clear: both;
+}
+
+#main-content > .row > .columns p:before{
+	content: "";
+	height: 0px;
+	width: 13em;
+	display: block;
+	overflow: hidden;
+}
+
+/* site wide / needs better solution */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a{
+	color: #333;
+	outline: none;
+}
+
+a:hover,
+a:focus{
+	color: #aaa;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 35px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 10px #aaa;
+}
+
+.menu-item:hover{
+	color: #999;
+	background: #252525;
+}
+
+.icon-menu:hover{
+	color: #aaa;
+	cursor: pointer;
+}
+
+.icon-menu:after{
+	content: "";
+	clear:both;
+	content: "\e800";
+	font-size: 0.7em;
+}
+
+/* -- Non-abstract || END || -- */
+
 /* -- Custom Web Font Icons || START || -- */
 @font-face {
 	font-family: 'menu-font';
@@ -16,160 +212,4 @@
 	speak: none;
 }
 
-.icon-menu{
-	float: right;
-	top: 0px;
-	right: 35px;
-	color: #333;
-}
-
-.icon-menu:after{
-	content: "";
-	clear:both;
-}
-
-.icon-menu:hover{
-	color: #aaa;
-	cursor: pointer;
-}
-
-.icon-menu:after{
-	content: "\e800";
-	font-size: 0.7em;
-}
-
 /* -- Custom Web Font Icons || END || -- */
-
-/* -- Non-abstract / Specific || START || -- */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-a{
-	color: #333;
-	outline: none;
-}
-
-a:hover,
-a:focus{
-	color: #aaa;
-}
-
-#main-content > .row > .columns > img:after{
-	clear: both;
-}
-
-#main-content > .row > .columns > p:before{
-	content: "";
-	height: 0px;
-	width: 13em;
-	display: block;
-	overflow: hidden;
-}
-
-input[type="submit"]{
-	width: 100px;
-	height: 35px;
-	border: 1px solid #ccc;
-	background: white;
-	font-family: Roboto, sans-serif;
-	color: #666;
-	font-size: 0.9em;
-	outline: none;	
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:focus{
-	border: 1px solid #aaa;
-	box-shadow: 0px 0px 10px #aaa;
-}
-
-#slidein-menu{
-	position: fixed;
-	top: 0px;
-	right: -200px;
-	bottom: 0px;
-	width: 200px;
-	background: #333 url(../img/debut_dark.png) repeat center top;
-	z-index: 9999;
-}
-
-.slidein-menu-item{
-	position: relative;
-	top: 0px;
-	left: 0px;
-	height: 50px;
-	width: 100%;
-	text-align: center;
-	line-height: 50px;
-	color: #f7f7f7;
-	box-shadow: 0px 1px 0px #555, inset 0px -1px 0px #000;
-}
-
-.slidein-menu-item:hover{
-	color: #999;
-	background: #252525;
-}
-
-/* -- Non-abstract || END || -- */
-
-/* -- Abstract / Modular || START || -- */
-/* block stylings [bgs, colors, etc.] */
-.bg-main{
-	background: #f7f7f7 url(../img/debut_light.png) repeat center top;
-}
-
-.color-light{
-	color: #aaa;
-}
-
-.color-dark{
-	color: #333;
-}
-
-.no-out{
-	outline: none;
-}
-
-/* font stylings */
-.font-robo{
-	font-family: Roboto, sans-serif;
-}
-
-.wgt-bold{
-	font-weight: bold;
-}
-
-/* spacing stylings */
-.m-20px{
-	margin: 20px;
-}
-
-/* float stylings */
-.fl-right{
-	float: right;
-}
-
-.fl-left{
-	float: left;
-}
-
-.clr-both{
-	clear: both;
-}
-
-/* special interaction stylings */
-.curs-point{
-	cursor: pointer;
-}
-
-/* custom complex stylings */
-.hide{
-	position: absolute !important;
-	top: -9999px !important;
-	left: -9999px !important;
-}
-
-/* Abstract / Modular || END || */
