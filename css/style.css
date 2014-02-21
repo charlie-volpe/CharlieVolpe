@@ -143,13 +143,27 @@ body {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
-    color: #aaa;
+  background: #222;
+  color: white;
+}
+
+.ribbon h2{
+  text-align: center;
 }
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+  background: #111;
+  color: #888;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover{
+  color: #2094ff;
 }
 
 @media (min-width: 48em){
@@ -180,6 +194,9 @@ body {
 	.splash-twitter{
 		font-size: 150%;
 	}
+  .ribbon .pure-u-1{
+    margin: auto;
+  }
 }
 
 @media (min-width: 78em) {
@@ -201,6 +218,9 @@ body {
   .splash-twitter{
 		font-size: 200%;
 	}
+  .ribbon .pure-u-1{
+    margin: auto;
+  }
 }
 
 @media (max-height: 55em) and (min-width: 48em) and (orientation: landscape){
