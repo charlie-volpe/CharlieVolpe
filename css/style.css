@@ -7,7 +7,7 @@ body {
 .main-menu{
 	padding: 0.5em;
 	text-align: center;
-	box-shadow: 0 1px 5px rgba(0,0,0, 0.5);
+	box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
 }
 
 .main-menu.pure-menu-open{
@@ -110,7 +110,7 @@ body {
   z-index: 2;
   background: #0A5CA6;
   color: white;
-  box-shadow: 0 -1px 5px rgba(0,0,0, 0.5);
+  /*box-shadow: 0 -1px 5px rgba(0,0,0, 0.5);*/
 }
 
 .content-head {
@@ -152,7 +152,7 @@ body {
     background: #111;
 }
 
-@media handheld, screen and (min-width: 48em){
+@media (min-width: 48em){
 	body {
     font-size: 16px;
   }
@@ -182,7 +182,7 @@ body {
 	}
 }
 
-@media handheld, screen and (min-width: 78em) {
+@media (min-width: 78em) {
 	body {
     font-size: 18px;
   }
@@ -201,4 +201,20 @@ body {
   .splash-twitter{
 		font-size: 200%;
 	}
+}
+
+@media (max-height: 55em) and (min-width: 48em) and (orientation: landscape){
+  .splash{
+    margin: 2em auto;
+  }
+}
+
+@media (max-width: 48em) and (orientation: landscape){
+  .splash{
+    margin: 0 auto !important;
+  }
+  .splash .profile-pic{
+    width: 100px;
+    float: left;
+  }
 }
