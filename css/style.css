@@ -1,215 +1,210 @@
-/* -- Abstract / Modular || START || -- */
-/* color stylings [bgs, colors, etc.] */
-.bg-white{
-	background: white;
+body {
+    line-height: 1.7em;
+    color: #333;
+    font-size: 13px;
 }
 
-.bg-light{
-	background: #f7f7f7 url(../img/debut_light.png) repeat center top;
-}
-
-.bg-dark{
-	background: #333 url(../img/debut_dark.png) repeat center top;
-}
-
-.color-light{
-	color: #f7f7f7;
-}
-
-.color-mid{
-	color: #aaa;
-}
-
-.color-mid-dark{
-	color: #666;
-}
-
-.color-dark{
-	color: #333;
-}
-
-.no-out{
-	outline: none;
-}
-
-.brd-thin-mid{
-	border: 1px solid #ccc;
-}
-
-.btm-groove{
-	box-shadow: 0px 1px 0px #555, inset 0px -1px 0px #000;
-}
-
-/* text stylings */
-.font-robo{
-	font-family: Roboto, sans-serif;
-}
-
-.wgt-bold{
-	font-weight: bold;
-}
-
-.txt-center{
+.main-menu{
+	padding: 0.5em;
 	text-align: center;
+	box-shadow: 0 1px 5px rgba(0,0,0, 0.5);
 }
 
-/* spacing stylings */
-.m-20px{
-	margin: 20px;
+.main-menu.pure-menu-open{
+	background: #222;
 }
 
-.ft-size-0_9{
-	font-size: 0.9em;
+.pure-menu.pure-menu-open.pure-menu-fixed{
+	border-bottom: none;
+	z-index: 4;
 }
 
-/* sizing stylings */
-.hgt-50{
-	height: 50px;
+.main-menu .pure-menu-heading{
+	font-size: 1.2em;
+	color: white;
 }
 
-.ln-hgt-50{
-	line-height: 50px;
+.main-menu .pure-menu-selected a{
+	color: #888;
 }
 
-.wid-full{
-	width: 100%;
+.main-menu li a{
+	background: none;
+	border: none;
+	color: white;
 }
 
-.rgt-35{
-	right: 35px;
+.main-menu li a:hover,
+.main-menu li a:focus{
+	background: none;
+	border: none;
+	color: #2094ff;
 }
 
-/* placement stylings */
-.fl-right{
-	float: right;
+.splash-container {
+  background: #f7f7f7 url(../img/debut_light.png) repeat center top;
+  z-index: 1;
+  overflow: hidden;
+  /* The following styles are required for the "scroll-over" effect */
+  width: 100%;
+  height: 66%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
 }
 
-.fl-left{
-	float: left;
+.splash {
+  /* absolute center .splash within .splash-container */
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 100px; left: 0; bottom: 0; right: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.clr-both{
-	clear: both;
-}
-
-.pos-rel{
-	position: relative;
-}
-
-.pos-fix{
-	position: fixed;
-}
-
-.pos-abs{
-	position: absolute;
-}
-
-.dis-blk{
-	display: block;
-}
-
-.z-front{
-	z-index: 9999;
-}
-
-/* interaction stylings */
-.curs-point{
-	cursor: pointer;
-}
-
-/* custom complex stylings */
-.hide{
-	position: absolute !important;
-	top: -9999px !important;
-	left: -9999px !important;
-}
-
-/* Abstract / Modular || END || */
-
-/* -- Non-abstract / Specific || START || -- */
-/* very specific */
-#slidein-menu{
-	top: 0px;
-	right: -200px;
-	bottom: 0px;
+.splash .profile-pic{
 	width: 200px;
+	border: 5px solid #222;
+	border-radius: 5px;
 }
 
-#main-content > .row > .columns img:after{
-	clear: both;
+/* This is the main heading that appears on the blue section */
+.splash-name {
+  font-size: 23px;
+  font-weight: bold;
+  color: #222;
+  padding: .33em 1.6em;
+  font-weight: 100;
+  line-height: 1em;
 }
 
-#main-content > .row > .columns p:before{
-	content: "";
-	height: 0px;
-	width: 13em;
-	display: block;
-	overflow: hidden;
+.splash-title{
+	padding: .25em 1.6em;
 }
 
-/* site wide / needs better solution */
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.splash-twitter {
+  font-weight: 100;
+  color: #222;
+  padding: .1em 1.6em;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
 }
 
-a{
-	color: #333;
-	outline: none;
+.splash-twitter a{
+	text-decoration: none;
 }
 
-a:hover,
-a:focus{
-	color: #aaa;
+.splash-twitter a:hover,
+.splash-twitter a:focus{
+	color: #2094ff;
 }
 
-input[type="submit"]{
-	width: 100px;
-	height: 35px;
+.content-wrapper {
+  /* These styles are required for the "scroll-over" effect */
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  min-height: 12%;
+  z-index: 2;
+  background: #0A5CA6;
+  color: white;
+  box-shadow: 0 -1px 5px rgba(0,0,0, 0.5);
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus{
-	border: 1px solid #aaa;
-	box-shadow: 0px 0px 10px #aaa;
-}
-
-.menu-item:hover{
-	color: #999;
-	background: #252525;
-}
-
-.icon-menu:hover{
-	color: #aaa;
-	cursor: pointer;
-}
-
-.icon-menu:after{
-	content: "";
-	clear:both;
-	content: "\e800";
-	font-size: 0.7em;
-}
-
-/* -- Non-abstract || END || -- */
-
-/* -- Custom Web Font Icons || START || -- */
-@font-face {
-	font-family: 'menu-font';
-	src: url('../font/menu.eot?98903651');
-  src: url('../font/menu.eot?98903651#iefix') format('embedded-opentype'),
-       url('../font/menu.woff?98903651') format('woff'),
-       url('../font/menu.ttf?98903651') format('truetype'),
-       url('../font/menu.svg?98903651#fontello') format('svg');
-	font-weight: normal; font-style: normal;
-}
-
-[class*="icon-"] {
-	font-family: 'menu-font';
-	font-style: normal;
+.content-head {
 	font-size: 3em;
-	speak: none;
+	line-height: 1.5em;
+	font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 1.2em 0 1em;
 }
 
-/* -- Custom Web Font Icons || END || -- */
+.content .pure-u-1 p{
+	letter-spacing: 0.05em;
+	font-weight: 100;
+}
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+.content-head-ribbon {
+    color: white;
+}
+
+/* This is the class used for the content sub-headers (<h3>) */
+.content-subhead {
+  color: white;
+  font-size: 16px;
+}
+.content-subhead i {
+  margin-right: 7px;
+}
+
+/* This is the class used for the dark-background areas. */
+.ribbon {
+    background: #2d3e50;
+    color: #aaa;
+}
+
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+}
+
+@media (min-width: 48em){
+	body {
+    font-size: 16px;
+  }
+	.main-menu{
+		text-align: left;
+	}
+	.main-menu ul{
+		float: right;
+	}
+	.content{
+		padding: 1em;
+	}
+	.content-subhead{
+		font-size: 110%;
+	}
+	.splash{
+  	margin: 4em auto;
+  }
+	.splash .profile-pic{
+		width: 250px;
+	}
+	.splash-name{
+		font-size: 250%;
+	}
+	.splash-title{
+		font-size: 200%;
+	}
+	.splash-twitter{
+		font-size: 150%;
+	}
+}
+
+@media (min-width: 78em) {
+	body {
+    font-size: 18px;
+  }
+	.content-subhead{
+		font-size: 145%;
+	}
+  .splash{
+  	margin: 1em auto;
+  }
+  .splash .profile-pic{
+		width: 325px;
+	}
+  .splash-name{
+  	font-size: 300%;
+  }
+  .splash-title{
+		font-size: 250%;
+	}
+  .splash-twitter{
+		font-size: 200%;
+	}
+}
