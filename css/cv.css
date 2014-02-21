@@ -1,0 +1,587 @@
+/* -- Abstract / Modular || START || -- */
+/* color stylings [bgs, colors, etc.] */
+.cv-bg-white{
+	background: white;
+}
+
+.cv-bg-light{
+	background: #f7f7f7 url(../img/debut_light.png) repeat center top;
+}
+
+.cv-bg-dark{
+	background: #333 url(../img/debut_dark.png) repeat center top;
+}
+
+.cv-clr-lgt{
+	color: #f7f7f7;
+}
+
+.cv-clr-mid{
+	color: #aaa;
+}
+
+.cv-clr-mid-drk{
+	color: #666;
+}
+
+.cv-clr-drk{
+	color: #333;
+}
+
+.cv-no-out{
+	outline: none;
+}
+
+.cv-no-brd{
+	border: none;
+}
+
+.cv-brd-thin-mid{
+	border: 1px solid #ccc;
+}
+
+.cv-btm-groove{
+	box-shadow: 0px 1px 0px #555, inset 0px -1px 0px #000;
+}
+
+/* text stylings */
+.cv-ft-robo{
+	font-family: Roboto, sans-serif;
+}
+
+.cv-wgt-ltr{
+	font-weight: lighter;
+}
+
+.cv-wgt-nor{
+	font-weight: normal;
+}
+
+.cv-wgt-bld{
+	font-weight: bold;
+}
+
+.cv-wgt-bldr{
+	font-weight: bolder;
+}
+
+.cv-tx-lft{
+	text-align: left;
+}
+
+.cv-tx-rgt{
+	text-align: right;
+}
+
+.cv-tx-cen{
+	text-align: center;
+}
+
+.cv-tx-jus{
+	text-align: justify;
+}
+
+/* spacing stylings */
+.cv-m-1{
+	margin: 1em;
+}
+
+.cv-m-2{
+	margin: 2em;
+}
+
+.cv-m-3{
+	margin: 3em;
+}
+
+.cv-m-4{
+	margin: 4em;
+}
+
+.cv-m-5{
+	margin: 5em;
+}
+
+.cv-m-6{
+	margin: 6em;
+}
+
+.cv-mt-1{
+	margin-top: 1em;
+}
+
+.cv-mt-2{
+	margin-top: 2em;
+}
+
+.cv-mt-3{
+	margin-top: 3em;
+}
+
+.cv-mt-4{
+	margin-top: 4em;
+}
+
+.cv-mt-5{
+	margin-top: 5em;
+}
+
+.cv-mt-6{
+	margin-top: 6em;
+}
+
+.cv-ml-1{
+	margin-left: 1em;
+}
+
+.cv-ml-2{
+	margin-left: 2em;
+}
+
+.cv-ml-3{
+	margin-left: 3em;
+}
+
+.cv-ml-4{
+	margin-left: 4em;
+}
+
+.cv-ml-5{
+	margin-left: 5em;
+}
+
+.cv-ml-6{
+	margin-left: 6em;
+}
+
+.cv-mr-1{
+	margin-right: 1em;
+}
+
+.cv-mr-2{
+	margin-right: 2em;
+}
+
+.cv-mr-3{
+	margin-right: 3em;
+}
+
+.cv-mr-4{
+	margin-right: 4em;
+}
+
+.cv-mr-5{
+	margin-right: 5em;
+}
+
+.cv-mb-6{
+	margin-right: 6em;
+}
+
+.cv-mb-1{
+	margin-bottom: 1em;
+}
+
+.cv-mb-2{
+	margin-bottom: 2em;
+}
+
+.cv-mb-3{
+	margin-bottom: 3em;
+}
+
+.cv-mb-4{
+	margin-bottom: 4em;
+}
+
+.cv-mb-5{
+	margin-bottom: 5em;
+}
+
+.cv-mb-6{
+	margin-bottom: 6em;
+}
+
+.cv-p-1{
+	padding: 1em;
+}
+
+.cv-p-2{
+	padding: 2em;
+}
+
+.cv-p-3{
+	padding: 3em;
+}
+
+.cv-p-4{
+	padding: 4em;
+}
+
+.cv-p-5{
+	padding: 5em;
+}
+
+.cv-p-6{
+	padding: 6em;
+}
+
+.cv-pt-1{
+	padding-top: 1em;
+}
+
+.cv-pt-2{
+	padding-top: 2em;
+}
+
+.cv-pt-3{
+	padding-top: 3em;
+}
+
+.cv-pt-4{
+	padding-top: 4em;
+}
+
+.cv-pt-5{
+	padding-top: 5em;
+}
+
+.cv-pt-6{
+	padding-top: 6em;
+}
+
+.cv-pl-1{
+	padding-left: 1em;
+}
+
+.cv-pl-2{
+	padding-left: 2em;
+}
+
+.cv-pl-3{
+	padding-left: 3em;
+}
+
+.cv-pl-4{
+	padding-left: 4em;
+}
+
+.cv-pl-5{
+	padding-left: 5em;
+}
+
+.cv-pl-6{
+	padding-left: 6em;
+}
+
+.cv-pr-1{
+	padding-right: 1em;
+}
+
+.cv-pr-2{
+	padding-right: 2em;
+}
+
+.cv-pr-3{
+	padding-right: 3em;
+}
+
+.cv-pr-4{
+	padding-right: 4em;
+}
+
+.cv-pr-5{
+	padding-right: 5em;
+}
+
+.cv-pb-6{
+	padding-right: 6em;
+}
+
+.cv-pb-1{
+	padding-bottom: 1em;
+}
+
+.cv-pb-2{
+	padding-bottom: 2em;
+}
+
+.cv-pb-3{
+	padding-bottom: 3em;
+}
+
+.cv-pb-4{
+	padding-bottom: 4em;
+}
+
+.cv-pb-5{
+	padding-bottom: 5em;
+}
+
+.cv-pb-6{
+	padding-bottom: 6em;
+}
+
+.cv-fs-0-5{
+	font-size: 0.5em;
+}
+
+.cv-fs-0-5{
+	font-size: 0.6em;
+}
+
+.cv-fs-0-7{
+	font-size: 0.7em;
+}
+
+.cv-fs-0-8{
+	font-size: 0.8em;
+}
+
+.cv-fs-0-9{
+	font-size: 0.9em;
+}
+
+.cv-fs-1{
+	font-size: 1em;
+}
+
+.cv-fs-2{
+	font-size: 2em;
+}
+
+.cv-fs-3{
+	font-size: 3em;
+}
+
+.cv-fs-4{
+	font-size: 4em;
+}
+
+/* sizing stylings */
+.cv-hgt-1{
+	height: 1em;
+}
+
+.cv-hgt-2{
+	height: 2em;
+}
+
+.cv-hgt-3{
+	height: 3em;
+}
+
+.cv-hgt-4{
+	height: 4em;
+}
+
+.cv-hgt-5{
+	height: 5em;
+}
+
+.cv-hgt-6{
+	height: 6em;
+}
+
+.cv-ln-hgt-1{
+	line-height: 1em;
+}
+
+.cv-ln-hgt-2{
+	line-height: 2em;
+}
+
+.cv-ln-hgt-3{
+	line-height: 3em;
+}
+
+.cv-ln-hgt-4{
+	line-height: 4em;
+}
+
+.cv-ln-hgt-5{
+	line-height: 5em;
+}
+
+.cv-ln-hgt-6{
+	line-height: 6em;
+}
+
+.cv-rgt-1{
+	right: 1em;
+}
+
+.cv-rgt-2{
+	right: 2em;
+}
+
+.cv-rgt-3{
+	right: 3em;
+}
+
+.cv-rgt-4{
+	right: 4em;
+}
+
+.cv-rgt-5{
+	right: 5em;
+}
+
+.cv-rgt-6{
+	right: 6em;
+}
+
+.cv-lft-1{
+	left: 1em;
+}
+
+.cv-lft-2{
+	left: 2em;
+}
+
+.cv-lft-3{
+	left: 3em;
+}
+
+.cv-lft-4{
+	left: 4em;
+}
+
+.cv-lft-5{
+	left: 5em;
+}
+
+.cv-lft-6{
+	left: 6em;
+}
+
+/* placement stylings */
+.cv-fl-top{
+	float: top;
+}
+
+.cv-fl-rgt{
+	float: right;
+}
+
+.cv-fl-lft{
+	float: left;
+}
+
+.cv-clr-bth{
+	clear: both;
+}
+
+.cv-pos-rel{
+	position: relative;
+}
+
+.cv-pos-fix{
+	position: fixed;
+}
+
+.cv-pos-abs{
+	position: absolute;
+}
+
+.cv-dis-inl{
+	display: inline;
+}
+
+.cv-dis-blk{
+	display: block;
+}
+
+.cv-dis-inl-blk{
+	display: inline-block;
+}
+
+.cv-z-front{
+	z-index: 9999;
+}
+
+.cv-z-back{
+	z-index: 0;
+}
+
+/* interaction stylings */
+.cv-cur-pnt{
+	cursor: pointer;
+}
+
+/* custom complex stylings */
+.hide{
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/* Abstract / Modular || END || */
+
+/* -- Non-abstract / Specific || START || -- */
+/* site wide / needs better solution */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a{
+	color: #333;
+	outline: none;
+}
+
+a:hover,
+a:focus{
+	color: #aaa;
+}
+
+input[type="submit"]{
+	width: 100px;
+	height: 35px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+	border: 1px solid #aaa;
+	box-shadow: 0px 0px 10px #aaa;
+}
+
+.menu-item:hover{
+	color: #999;
+	background: #252525;
+}
+
+.icon-menu:hover{
+	color: #aaa;
+	cursor: pointer;
+}
+
+.icon-menu:after{
+	content: "";
+	clear:both;
+	content: "\e800";
+	font-size: 0.7em;
+}
+
+/* -- Non-abstract || END || -- */
+
+/* -- Custom Web Font Icons || START || -- */
+@font-face {
+	font-family: 'menu-font';
+	src: url('../font/menu.eot?98903651');
+  src: url('../font/menu.eot?98903651#iefix') format('embedded-opentype'),
+       url('../font/menu.woff?98903651') format('woff'),
+       url('../font/menu.ttf?98903651') format('truetype'),
+       url('../font/menu.svg?98903651#fontello') format('svg');
+	font-weight: normal; font-style: normal;
+}
+
+[class*="icon-"] {
+	font-family: 'menu-font';
+	font-style: normal;
+	font-size: 3em;
+	speak: none;
+}
+
+/* -- Custom Web Font Icons || END || -- */
