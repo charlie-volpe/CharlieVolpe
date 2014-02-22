@@ -147,6 +147,11 @@ body {
   color: white;
 }
 
+.ribbon p{
+  letter-spacing: 0.05em;
+  font-weight: 100;
+}
+
 .ribbon h2{
   text-align: center;
 }
@@ -155,6 +160,7 @@ body {
 .footer {
   background: #111;
   color: #888;
+  font-weight: 100;
 }
 
 .footer a{
