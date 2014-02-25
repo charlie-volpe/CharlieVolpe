@@ -54,7 +54,6 @@ a:focus{
 
 #site-wrapper{
   background: #f7f7f7 url(../img/debut_light.png) repeat center top;
-  padding: 10px;
 }
 
 .splash-container {
@@ -122,6 +121,8 @@ a:focus{
   top: 35px;
   max-width: 920px;
   margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .content-wrapper {
