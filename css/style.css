@@ -1,7 +1,8 @@
 body {
-    line-height: 1.7em;
-    color: #333;
-    font-size: 13px;
+  line-height: 1.7em;
+  color: #333;
+  font-size: 13px;
+  background: #f7f7f7 url(../img/debut_light.png) repeat center top;
 }
 
 a{
@@ -68,10 +69,6 @@ a:focus{
 	background: none;
 	border: none;
 	color: #2094ff;
-}
-
-#site-wrapper{
-  background: #f7f7f7 url(../img/debut_light.png) repeat center top;
 }
 
 .splash-container {
@@ -311,6 +308,9 @@ a:focus{
 	}
   .ribbon .pure-u-1{
     margin: auto;
+  }
+  .med-fl-lft{
+    float: left;
   }
 }
 
