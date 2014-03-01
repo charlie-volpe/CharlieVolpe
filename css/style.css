@@ -27,6 +27,7 @@ a:focus{
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 input[type="text"],
+input[type="email"],
 textarea{
   border: 1px solid #ccc;
   border-radius: 3px;
