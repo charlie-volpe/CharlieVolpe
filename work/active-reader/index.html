@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Charlie Volpe's Portfolio Site - Programmer / UX Designer - @charlie_volpe — The home page describes the interests of Charlie and gives insights of him.">
+	<title>C V - Hipmunk Tours</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+
+	<!--[if lte IE 8]>
+      <link rel="stylesheet" href="../../css/main-grid-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="../../css/main-grid.css">
+  <!--<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="../../script/retina.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/cv.css">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+</head>
+<body>
+
+	<div id="site-wrapper">
+
+		<div id="site-header">
+			<div class="main-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+				<a class="pure-menu-heading" href="">Charlie Volpe</a>
+
+				<ul>
+					<li><a href="#">Home</a></li>
+					<!-- <li><a href="#">About</a></li> -->
+          <li><a href="./work">Work</a></li>
+					<!-- <li><a href="#">Contact</a></li> -->
+				</ul>
+			</div>
+		</div>
+        
+    <div class="header-buffer"></div>
+
+		<div class="work-content-wrapper">
+      <div class="cv-boxes bread-crumbs">
+				<a href="../../">Home</a> / <a href="../">Work</a> / <a href="#" class="selected">Active-Reader</a>
+			</div>
+    	<div class="pure-g cv-pb-2">
+				<div class="pure-u-1">
+					<h1>Active Reader</h1>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes clearfix">
+						<h2>My Role</h2>
+						<p>I started out at Tall Chair using the Active Reader Tool. I became the User Experience Designer and UI / Tools Programmer for the Active Reader Tool built in Unity3D.</p>
+					</div>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes">
+						<h2>User Research &amp; Usability Testing</h2>
+						<p>The main people using the Active Reader tool were my co-workers. That made it easier to borrow their time to ask them what they wanted to change about the tool. I also watched each one for a time while they used the tool. I noticed they weren't actually using a lot of the tool that was implemented. I also noticed that the majority of what they used was only a small portion of the tool. The main problem area was the Chapter Flow.</p>
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-med-1-2">
+					<div class="cv-min-hgt-tall cv-boxes clearfix">
+						<h2>Chapter Flow</h2>
+						<p>To start a Chapter is a collection of Pages. These naming conventions come from the main use of the tool as an interactive book authoring system. The Chapter Flow maintains all of the information for the current project. You could potentially have many "Chapters" for each "Book"(app).</p>
+						<div class="cv-img-def pure-u-1">
+							<img src="../../img/ar-chapter-flow.jpg" class="img-full-width box-shadow-2" />
+						</div>
+						<p>This is how the Chapter Flow started when I out. It was huge and cumbersome. It was functional but a little unwieldy. My task was to make this more useable.</p>
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-med-1-2">
+					<div class="cv-min-hgt-tall cv-boxes clearfix">
+						<h2>The Breakdown</h2>
+						<p>The Chapter Flow window maintained a multitude of functions. These are the main functions of the window:</p>
+						<ul style="list-style-type: square">
+							<li>Saving &amp; Loading of Chapter Flows</li>
+							<li>Page Info</li>
+							<li>First Page</li>
+							<li>Bundle Loading Info</li>
+							<li>Switching To &amp; From Indie Mode</li>
+							<li>Circulation Info</li>
+							<li>Creating an ARW</li>
+						</ul>
+						<p>By splitting these into separate modular compartments, they could be open only when needed and take up less space on screen. I will be talking about all of these parts and how I dealt with each one in the following sections in the same order as the list above.</p>
+					</div>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes clearfix">
+						<h2>Saving &amp; Loading</h2>
+						<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+							<img src="../../img/ar-save-load.jpg" class="img-full-width box-shadow-2" />
+							<p>The Chapter Flow can already be loaded from the top menu. Since you can only have one Chapter Flow open at a time, loading from the Chapter Flow itself didn't make much sense.</p>
+						</div>
+						<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+							<img src="../../img/ar-open.jpg" class="img-full-width box-shadow-2" />
+							<p>As for saving we can make things easier by making it automatically save itself after it changes in anyway. This removes the button and makes sure the user doesn't forget to save the changes.</p>
+						</div>
+					</div>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes clearfix">
+						<h2>Page Info</h2>
+						<p>The most important task of the Chapter Flow is keeping track of the Page info. This functionality gets its own window which is called the Chapter Editor, since a Chapter is a collection of Pages.</p>
+						<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+							<img src="../../img/ar-page-info.jpg" class="cv-fl-lft img-full-width box-shadow-2" />
+						</div>
+						<div class="clearfix">
+							<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+								<p>There were many issues with this version:</p>
+								<ul style="list-style-type: square">
+									<li>It shows the unique id of the page. This doesn't make much sense to the artist. Only reason it is there is because the files match these.<img src="../../img/ar-files.jpg" class="img-full-width box-shadow-2" /></li>
+									<li>The Page functions are all in the page pop up. To create a new file you need go all the way back over to the opposite side of the window.</li>
+									<li>The two Edit buttons don't really make sense.</li>
+									<li>The size of the window to fit these both is just huge!</li>
+								</ul>
+							</div>
+						</div>
+						<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+							<img src="../../img/ar-chp-editor.jpg" class="cv-fl-lft img-full-width box-shadow-2" />
+						</div>
+						<div class="clearfix">
+							<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+								<p>It has been stripped down to the basic needs. There are many changes here:</p>
+								<ul style="list-style-type: square">
+									<li>No more unique id's here. As you can see the name of the page is now the unique id. You can't have two pages with the same name so why not use that to our advantage?<img src="../../img/ar-new-files.jpg" class="img-full-width box-shadow-2" /></li>
+									<li>The global chapter controlling functions are now at the top.</li>
+									<li>The most useful functions per page are at the right of each page. When the page is loaded this changes contextually from Sync / Load to Save / Unload.<img src="../../img/ar-page-open.jpg" class="img-full-width box-shadow-2" /></li>
+									<li>More advanced functions for the page can be accessed through a right click context menu.</li>
+									<li>Versions are a new concept added in that can be used to change how a page works under certain circumstances.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pure-u-1">
+							<p>As you can see much of the functionality was ripped out, while others are put in based on need. This new design has cut the size down to about one third the size. Every thing visible is important and has its uses. The less important things are hidden in the context menus.</p>
+						</div>
+					</div>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes">
+						<h2>Bundle Loading Info</h2>
+						<p>This is the second most important task of the chapter flow. The user associates the asset bundles to each page. The Load section specifies which bundles to load when the page loads. The Unload section specifies which bundles to unload when the page is unloaded.</p>
+						<div class="clearfix">
+							<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+								<img src="../../img/ar-bundles.jpg" class="img-full-width box-shadow-2" />
+							</div>
+							<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+								<img src="../../img/ar-bundle-loads.jpg" class="img-full-width box-shadow-2" />
+							</div>
+						</div>
+						<p>The bundle section takes up the entire left side of the window and the load and unload sections take up the right. However, this is rarely needed. The main use is when a page is initially setup. Putting this in its own window that can be hidden if the user doesn't want to waste screen space will help with that.</p>
+						<div class="clearfix">
+							<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+								<img src="../../img/ar-bundle-editor.jpg" class="img-full-width box-shadow-2" />
+							</div>
+							<div class="cv-fl-lft cv-img-def pure-u-1 pure-u-med-1-2">
+								<p>This modified version is similar but more compact. Here are the changes:</p>
+								<ul style="list-style-type: square">
+									<li>Both of the other sections are here in this new window but they are placed next to each other.</li>
+									<li>The pages are selected with a popup selector as well as which version you are modifying.</li>
+									<li>You can now unload all currently loaded bundles.</li>
+								</ul>
+							</div>
+						</div>
+						<h2>Switching To &amp; From Indie</h2>
+							<p>This toggle was moved into here because it is only relevant to bundles since it is refering to indie bundles(file folders in Resources) and probundles(.unity3d compressed files). The wording was changed from 'Indie' to 'Raw' and 'Pro' to 'iOS' so that when Android and other bundles were introduced it would make more sense.</p>
+					</div>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes">
+						<h2>Circulation Info &amp; Creating an ARW</h2>
+						<p>These are both items that have been deprecated. Circulation would get its own window if it was re-implemented. Creating an ARW was replaced by a Flash builder, but has since been deprecated as well.</p>
+					</div>
+				</div>
+				<div class="pure-u-1">
+					<div class="cv-boxes">
+						<h2>Conclusion</h2>
+						<div class="clearfix">
+							<div class="cv-fl-lft cv-img-def pure-u-3-4">
+								<img src="../../img/ar-chapter-flow.jpg" class="img-full-width box-shadow-2" />
+							</div>
+							<div class="cv-fl-lft cv-img-def pure-u-1-4">
+								<img src="../../img/ar-both-editors.jpg" class="img-full-width box-shadow-2" />
+							</div>
+						</div>
+						<p>Even with both windows open they still only take up one third of space that the old version did. However you can potentially shrink down the windows and place them as tabs of each other to save even more space on the screen. That is something that you weren't able to do before.</p>
+						<p>The functionality is still all there with more added! Everything makes more sense and is more useful than before. Overall I felt the time it took to make this design a reality was worth it.</p>
+					</div>
+				</div>
+
+      </div>
+    </div>
+
+    <div class="footer cv-p-1 cv-tx-cen">
+      &copy;2014 Charlie Volpe - Built with <a href="http://purecss.io/">PureCss.io</a> &amp; <a href="http://retinajs.com/">Retina.js</a> - BG from <a href="http://subtlepatterns.com/">SubtlePatterns.com</a>
+    </div>
+
+	</div>
+  
+</body>
+</html>
