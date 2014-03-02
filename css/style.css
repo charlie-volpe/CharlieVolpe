@@ -26,6 +26,26 @@ a:focus{
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+input[type="text"],
+input[type="email"],
+textarea{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+input[type="submit"]{
+  margin-top: 10px;
+  padding: 0px !important;
+}
+
+input[type="submit"]:hover{
+  border: none;
+  box-shadow: none;
+}
+
+
+
 .main-menu{
 	padding: 0.5em;
 	text-align: center;
@@ -229,11 +249,18 @@ a:focus{
   padding: 10px;
 }
 
+.cv-min-hgt-sm,
+.cv-min-hgt-sm-med,
 .cv-min-hgt-med,
-.cv-min-hgt-med-tall,
 .cv-min-hgt-tall{
   min-height: auto;
 }
+
+.cv-app-icon{
+  max-width: 100%;
+  max-height: 175px;
+}
+
 .header-buffer{
   width: 100%; height: 70px;
 }
@@ -250,9 +277,24 @@ a:focus{
   width: 100%;
   height: auto;
 }
+
 .img-half-width{
   width: 50%;
   height: auto;
+}
+
+.sm-full-button{
+  width: 100%;
+  padding: 1em;
+}
+
+
+
+@media (min-width: 35.5em){
+  .sm-full-button{
+    width: auto;
+    padding: 0.7em;
+  }
 }
 
 @media (min-width: 48em){
@@ -293,11 +335,14 @@ a:focus{
   .cv-boxes{
   margin: 10px 10px 10px 0px;
   }
+  .cv-min-hgt-sm{
+    min-height: 26em;
+  }
+  .cv-min-hgt-sm-med{
+    min-height: 30em;
+  }
   .cv-min-hgt-med{
     min-height: 36em;
-  }
-  .cv-min-hgt-med-tall{
-    min-height: 42em;
   }
   .cv-min-hgt-tall{
   min-height: 48em;
@@ -331,6 +376,9 @@ a:focus{
 	}
   .ribbon .pure-u-1{
     margin: auto;
+  }
+  .cv-min-hgt-sm-med{
+    min-height: 27em;
   }
 }
 
