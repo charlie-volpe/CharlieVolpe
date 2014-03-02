@@ -258,7 +258,7 @@ input[type="submit"]:hover{
 
 .cv-app-icon{
   max-width: 100%;
-  max-height:175px;
+  max-height: 175px;
 }
 
 .header-buffer{
@@ -277,9 +277,24 @@ input[type="submit"]:hover{
   width: 100%;
   height: auto;
 }
+
 .img-half-width{
   width: 50%;
   height: auto;
+}
+
+.sm-full-button{
+  width: 100%;
+  padding: 1em;
+}
+
+
+
+@media (min-width: 35.5em){
+  .sm-full-button{
+    width: auto;
+    padding: 0.7em;
+  }
 }
 
 @media (min-width: 48em){
