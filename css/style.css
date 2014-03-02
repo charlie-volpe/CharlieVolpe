@@ -26,6 +26,26 @@ a:focus{
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
+input[type="text"],
+input[type="email"],
+textarea{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+input[type="submit"]{
+  margin-top: 10px;
+  padding: 0px !important;
+}
+
+input[type="submit"]:hover{
+  border: none;
+  box-shadow: none;
+}
+
+
+
 .main-menu{
 	padding: 0.5em;
 	text-align: center;
