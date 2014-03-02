@@ -53,6 +53,7 @@
 					<div class="cv-boxes clearfix">
 						<h2>Creating the Apps</h2>
 						<p>These apps came earlier in Tall Chair's history than <a href="../fisher-price">the Fisher-Price&reg; apps</a>. This made my involvement in them more complex since the workflow and Active Reader tool weren't as stream-lined back then. I will go into depth about my involvement of each project below in a section called <em>'My Role'</em>. Keep in mind that these interactive comics were done by teams.</p>
+						<p>My general role for all of these projects was technical artist. Anything that needed to be thought through in a very logical matter but implemented in the tool fell under me. I also helped debug the artists' events, which is what we call the nodes of our visual programming language inside the Active Reader.</p>
 						<p>The following are in chronological order of release starting with the earliest...</p>
 					</div>
 				</div>
@@ -82,7 +83,14 @@
 						</div>
 						<div class="pure-u-1">
 							<h3>My Role</h3>
-							<p><!-- TODO: Fill in this section... --></p>
+							<p>Localization was one of the major obstacles for this book and the solution came from two major contributors. The first was our lead engineer at the time, <a href="http://www.linkedin.com/in/justinvasselli" target="_blank">Justin Vasselli</a>, who created the code for swapping Unity3D asset bundles in our tool. I was the second major contributor for localization.</p>
+							<p>I came up with the method for using this code to swap bundles just before loading a page. The Prefabs had to be named the same while the bundle names were the same with just the ends changed.
+							<br>I.E.: main_bundle_en.unity3d vs main_bundle_fr.unity3d...</p>
+							<p>Our Retina display used a simialr method but were coded a bit differently. The Retina bundles weren't dynamic they just swapped out for @2x bundles on app start when a certain device was detected.</p>
+							<p>My reasoning for this was that we could get the localization shortcode from the iPad itself then concatenate it on to the end of bundle name. This allows an auto language support in none English speaking countries. We could also force it to be another language by changing that string after initial load, which is how the language switch menu worked.</p>
+							<p>Normally we would just load the bundle on page load, but since this had to be done dynamically we had to load it before the page was loaded. This was accomplished by making a special page with no content that was always loaded. What this gave us was a global space to call events to and from. So every time a page was unloaded and a new page was loaded we would do the work from this new global space.</p>
+							<p>Once we had this system in place the artists just needed to create more bundles with the new naming convention then plug in the new language and add a menu item for it. Localization was definitely the most memorable aspect of this project that I worked on.</p>
+							<p>I also helped with making the original menu and anything else that need help or debugging. I was the technical artist for this project. If it didn't make sense to the artist I came in and figured it out. This was also around the time I started coding for the Active Reader tool itself.</p>
 						</div>
 
 					</div>
@@ -108,8 +116,13 @@
 							</div>
 						</div>
 						<div class="pure-u-1">
+							<h3>What Makes This App Special</h3>
+							<p>This was the first interactive comic that Tall Chair produced that let the user page through full comic pages. This allowed them to read it as if it were an actual comic and allowed them to skip the animations if they wanted.</p>
+						</div>
+						<div class="pure-u-1">
 							<h3>My Role</h3>
-							<p><!-- TODO: Fill in this section... --></p>
+							<p>This project was setup with localization in mind. It was the first project at Tall Chair we planned on localizing from the beginning. This made the process a lot simpler. I was able to talk with the artist who was setting up the main architecture and menu system. Starting with localization setup made this process a lot easier. Once I taught the artist how to setup the localization system I took a back seat to it. I only had to debug issues with localization instead of set the whole thing up.</p>
+							<p></p>
 						</div>
 
 					</div>
@@ -140,7 +153,7 @@
 						</div>
 						<div class="pure-u-1">
 							<h3>My Role</h3>
-							<p><!-- TODO: Fill in this section... --></p>
+							<p>By the time this project came out we started getting really stream-lined for the interactive comics medium. The techniques we discovered in the previous apps helped shape this one. For this app I became more of a consultant. Helping with ideas, complex issues and bugs only as I worked on a separate project of my own.</p>
 						</div>
 
 					</div>
@@ -171,7 +184,7 @@
 						</div>
 						<div class="pure-u-1">
 							<h3>My Role</h3>
-							<p><!-- TODO: Fill in this section... --></p>
+							<p>I helped dream up some creative solutions and helped bug hunt this app. This wasn't a interactive comic like the rest, but more of a motion graphics story. Some of the animations needed special help but I was doing much more coding of the actual tool. My job was now to come up with new technology that would be needed for this app and future ones.</p>
 						</div>
 
 					</div>
@@ -182,7 +195,7 @@
 						<h2>Things to Note</h2>
 						<p>All apps:</p>
 						<ul style="list-style-type: square">
-						<li>has animation for every page / panel like previous Tall Chair productions</li>
+						<li>have animation for every page / panel like previous Tall Chair productions</li>
 						<li>work on iOS 5.1.1 devices like iPad 1 as well as newer devices</li>
 						</ul>
 					</div>

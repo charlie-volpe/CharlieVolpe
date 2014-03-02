@@ -250,8 +250,8 @@ input[type="submit"]:hover{
 }
 
 .cv-min-hgt-sm,
+.cv-min-hgt-sm-med,
 .cv-min-hgt-med,
-.cv-min-hgt-med-tall,
 .cv-min-hgt-tall{
   min-height: auto;
 }
@@ -338,11 +338,11 @@ input[type="submit"]:hover{
   .cv-min-hgt-sm{
     min-height: 26em;
   }
+  .cv-min-hgt-sm-med{
+    min-height: 30em;
+  }
   .cv-min-hgt-med{
     min-height: 36em;
-  }
-  .cv-min-hgt-med-tall{
-    min-height: 42em;
   }
   .cv-min-hgt-tall{
   min-height: 48em;
@@ -376,6 +376,9 @@ input[type="submit"]:hover{
 	}
   .ribbon .pure-u-1{
     margin: auto;
+  }
+  .cv-min-hgt-sm-med{
+    min-height: 27em;
   }
 }
 
