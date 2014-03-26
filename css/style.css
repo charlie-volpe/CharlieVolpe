@@ -1,399 +1,416 @@
-body {
-  line-height: 1.7em;
-  color: #333;
-  font-size: 13px;
-  background: #f7f7f7 url(../img/debut_light.png) repeat center top;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,800);
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here);
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
-a{
-	color: black;
-  font-weight: bold;
-}
-
-a:hover,
-a:focus{
-  color: #2094ff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-  }
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
 
-input[type="text"],
-input[type="email"],
-textarea{
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 10px;
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+::selection {
+  background: #EBB5B5; /* Safari */
+  color: white;
+}
+::-moz-selection {
+  background: #EBB5B5; /* Firefox */
+  color: white;
 }
 
-input[type="submit"]{
-  margin-top: 10px;
-  padding: 0px !important;
+body {
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
-input[type="submit"]:hover{
-  border: none;
-  box-shadow: none;
+a {
+  color: #a7a7a7;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-
-
-.main-menu{
-	padding: 0.5em;
-	text-align: center;
-	box-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+a:hover {
+  color: #33a1de;
 }
 
-.main-menu.pure-menu-open{
-	background: #222;
+p {
+  padding-bottom: .5em;
 }
 
-.pure-menu.pure-menu-open.pure-menu-fixed{
-	border-bottom: none;
-	z-index: 4;
-}
-
-.main-menu .pure-menu-heading{
-	font-size: 1.2em;
-	color: white;
-}
-
-.main-menu .pure-menu-selected a{
-	color: #888;
-  pointer-events: none;
+.current-page{
+  color: #33a1de;
   cursor: default;
 }
 
-.selected{
-  color: #888;
-  cursor: text !important;
-  pointer-events: none;
-  text-decoration: none;
-}
-
-.main-menu li a{
-	background: none;
-	border: none;
-	color: white;
-}
-
-.main-menu li a:hover,
-.main-menu li a:focus{
-	background: none;
-	border: none;
-	color: #2094ff;
-}
-
-.splash-container {
-  background: #f7f7f7 url(../img/debut_light.png) repeat center top;
-  z-index: 1;
-  overflow: hidden;
-  /* The following styles are required for the "scroll-over" effect */
-  width: 100%;
-  height: 88%;
-  top: 0;
-  left: 0;
-  position: fixed !important;
-}
-
-.splash {
-  /* absolute center .splash within .splash-container */
-  width: 80%;
-  height: 50%;
-  margin: auto;
-  position: absolute;
-  top: 100px; left: 0; bottom: 0; right: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.splash .profile-pic{
-	width: 200px;
-	border: 5px solid #222;
-	border-radius: 5px;
-}
-
-/* This is the main heading that appears on the blue section */
-.splash-name {
-  font-size: 23px;
-  font-weight: bold;
-  color: #222;
-  padding: .33em 1.6em;
-  font-weight: 100;
-  line-height: 1em;
-}
-
-.splash-title{
-	padding: .25em 1.6em;
-}
-
-.splash-twitter {
-  font-weight: 100;
-  color: #222;
-  padding: .1em 1.6em;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
-}
-
-.splash-twitter a{
-	text-decoration: none;
-}
-
-.splash-twitter a:hover,
-.splash-twitter a:focus{
-	color: #2094ff;
-}
-
-.work-content-wrapper{
-  /*position: relative;*/
-  /*top: 35px;*/
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.content-wrapper {
-  /* These styles are required for the "scroll-over" effect */
-  position: absolute;
-  top: 87%;
-  width: 100%;
-  min-height: 12%;
-  z-index: 2;
-  background: #0A5CA6;
-  color: white;
-  /*box-shadow: 0 -1px 5px rgba(0,0,0, 0.5);*/
-}
-
-.content-head {
-	font-size: 3em;
-	line-height: 1.5em;
-	font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 1.2em 0 1em;
-}
-
-.content .pure-u-1 p{
-	letter-spacing: 0.05em;
-	font-weight: 100;
-}
-
-/* This is a modifier class used when the content-head is inside a ribbon */
-.content-head-ribbon {
-    color: white;
-}
-
-/* This is the class used for the content sub-headers (<h3>) */
-.content-subhead {
-  color: white;
-  font-size: 16px;
-}
-.content-subhead i {
-  margin-right: 7px;
-}
-
-/* This is the class used for the dark-background areas. */
-.ribbon {
-  background: #222;
-  color: white;
-}
-
-.ribbon p{
-  letter-spacing: 0.05em;
-  font-weight: 100;
-}
-
-.ribbon h2{
-  text-align: center;
-}
-
-/* This is the class used for the footer */
+.header,
 .footer {
-  background: #111;
-  color: #888;
-  font-weight: 100;
-}
-
-.footer a{
-  text-decoration: none;
-  color: white;
-}
-
-.footer a:hover{
-  color: #2094ff;
-}
-
-.skinny{
-  max-width: 250px;
-  margin: 0 auto;
-}
-
-.cv-boxes{
-  padding: 10px;
-  margin: 10px 0;
-  background: white;
-  box-shadow: 0px 0px 2px #aaa;
-}
-
-.cv-img-def{
-  box-sizing: border-box;
-  padding: 10px;
-}
-
-.cv-min-hgt-sm,
-.cv-min-hgt-sm-med,
-.cv-min-hgt-med,
-.cv-min-hgt-tall{
-  min-height: auto;
-}
-
-.cv-app-icon{
-  max-width: 100%;
-  max-height: 175px;
-}
-
-.header-buffer{
-  width: 100%; height: 70px;
-}
-
-.bread-crumbs{
-  padding: 10px;
-}
-
-.box-shadow-2{
-	box-shadow: 0px 0px 2px #333;
-}
-
-.img-full-width{
+  background: #222;
+  color: #a7a7a7;
   width: 100%;
-  height: auto;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 .5em;
 }
 
-.img-half-width{
+.footer {
+  text-align: center;
+  padding-top: .5em;
+}
+
+.footer img{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.footer-item {
+  display: inline-block;
+  padding-right: .5em;
+}
+
+#site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: default;
+}
+
+#site-title:hover {
+  color: #33a1de;
+  cursor: pointer;
+}
+
+.img-section {
+  padding: .5em;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.default-img-wrapper {
+  width: 100%;
+}
+
+.default-img-wrapper.thin {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.default-img {
+  width: 100%;
+}
+
+.menu {
+  position: relative;
+  background: #333;
+  color: #f7f7f7;
+  float: left;
+  width: 100%;
+}
+
+.menu-item {
+  float: left;
   width: 50%;
-  height: auto;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
 }
 
-.sm-full-button{
+a .menu-item {
+  color: #a7a7a7;
+}
+
+a .menu-item:hover{
+  background: #444;
+  cursor: pointer;
+}
+
+#menu-icon {
+  width: 2.5em;
+  line-height: 2.5em;
+  float: right;
+  cursor: pointer;
+}
+
+#menu-icon img {
+  width: 100%;
+  margin-top: .6em;
+}
+
+.content {
+  position: relative;
+  float: left;
   width: 100%;
   padding: 1em;
 }
 
-
-
-@media (min-width: 35.5em){
-  .sm-full-button{
-    width: auto;
-    padding: 0.7em;
-  }
+.selected {
+  border-top: 4px solid #33a1de;
+  border-left: none;
+  background: #444;
 }
 
-@media (min-width: 48em){
-	body {
-    font-size: 16px;
+.items{
+  width: 100%;
+}
+
+.show .items,
+.show .footer{
+  display: inline-block;
+}
+
+.hide .items,
+.hide .footer {
+  display: none;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 62em;
+  width: 100%;
+}
+
+.content-wrapper.thin > h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.interest {
+  float:left;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.interest hr {
+  border: 1px solid #ccc;
+  margin: .5em 0;
+}
+
+.generator {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.copyright {
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.polaroid {
+  background: #edf2f4 url(../../img/polaroid.png) repeat center top;
+  font-family: 'Just Me Again Down Here', sans-serif;
+  font-size: 1.5em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 85%;
+  padding: .75em .75em .85em .75em;
+  border-bottom: .1em solid #ccc;
+  text-align: center;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #c7c7c7;
+}
+
+.polaroid p {
+  padding: 0;
+}
+
+.personal-info,
+.skills {
+  float: none;
+  padding-bottom: 2em;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.personal-item {
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+.personal-item {
+  padding-bottom: .5em;
+}
+
+.current-interests {
+   padding-bottom: .5em;
+}
+
+.skill-bar {
+  width: 100%;
+  height: .5em;
+  background: #d7d7d7;
+}
+
+.skill-fill {
+  background: #33a1de;
+  height: 100%;
+}
+
+.skill-fill.nine {
+  width: 90%;
+}
+
+.skill-fill.eight {
+  width: 80%;
+}
+
+.skill-fill.seven {
+  width: 70%;
+}
+
+.skill-fill.six {
+  width: 60%;
+}
+
+.skill-fill.five {
+  width: 50%;
+}
+
+.breadcrumbs{
+  padding-bottom: .5em;
+}
+
+.work-section {
+  padding-bottom: 1em;
+}
+
+.button {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  padding: .5em;
+  background: #333;
+  color: #a7a7a7;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 36em) {
+  .content-wrapper.thin > h1 {
+    text-align: center;
+    font-size: 4em;
   }
-	.main-menu{
-		text-align: left;
-	}
-	.main-menu ul{
-		float: right;
-	}
-	.content{
-		padding: 1em;
-	}
-	.content-subhead{
-		font-size: 110%;
-	}
-	.splash .profile-pic{
-		width: 250px;
-	}
-	.splash-name{
-		font-size: 250%;
-	}
-	.splash-title{
-		font-size: 200%;
-	}
-	.splash-twitter{
-		font-size: 150%;
-	}
-  .ribbon .pure-u-1{
-    margin: auto;
+  .interest {
+    width: 50%;
+    padding-right: 1em;
   }
-  .skinny{
-    max-width: 500px;
-    margin: 0;
+  .interest.last {
+    padding-right: 0;
+    padding-bottom: 0;
   }
-  .cv-boxes{
-  margin: 10px 10px 10px 0px;
+  .polaroid{
+    width: 55%;
+    font-size: 1.65em;
   }
-  .cv-min-hgt-sm{
-    min-height: 26em;
-  }
-  .cv-min-hgt-sm-med{
-    min-height: 30em;
-  }
-  .cv-min-hgt-med{
-    min-height: 36em;
-  }
-  .cv-min-hgt-tall{
-  min-height: 48em;
-  }
-  .header-buffer{
-    height: 50px;
-  }
-  .med-fl-lft{
+  .personal-info,
+  .skills {
+    padding-right: 1em;
+    width: 50%;
     float: left;
   }
 }
 
-@media (min-width: 78em) {
-	body {
-    font-size: 18px;
+@media only screen and (min-width: 48em) {
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 30%;
   }
-	.content-subhead{
-		font-size: 145%;
-	}
-  .splash .profile-pic{
-		width: 325px;
-	}
-  .splash-name{
-  	font-size: 300%;
+  .menu-item {
+    width: 100%;
   }
-  .splash-title{
-		font-size: 250%;
-	}
-  .splash-twitter{
-		font-size: 200%;
-	}
-  .ribbon .pure-u-1{
-    margin: auto;
+  .footer {
+    position: absolute;
+    bottom: 0;
   }
-  .cv-min-hgt-sm-med{
-    min-height: 27em;
+  .items {
+    position: absolute;
+    top: 4em;
+    bottom: 4em;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
-}
-
-@media (max-height: 55em) and (min-width: 48em) and (orientation: landscape){
-  .splash{
-    margin: 2em auto;
+  .selected {
+    border-top: none;
+    border-left: 7px solid #33a1de;
+    border-right: 7px solid #444;
   }
-}
-
-@media (max-width: 48em) and (orientation: landscape){
-  .splash{
-    margin: 0 auto !important;
+  .menu.hide{
+    width: 3.5em;
   }
-  .splash .profile-pic{
-    width: 100px;
+  .menu.hide #site-title{
+    display: none;
+  }
+  .menu.hide #menu-icon{
+    visibility: visible;
     float: left;
+  }
+  .content {
+    margin-left: 30%;
+    width: 70%;
+  }
+  .content-wrapper.thin {
+    width: 40em;
+  }
+
+  .content-wrapper.thin > h1 {
+    text-align: center;
+    font-size: 5em;
+  }
+
+  .menu.hide ~ .content {
+    margin-left: 7%;
+    width: 93%;
+  }
+  .interest {
+    width: 25%;
+  }
+  .polaroid {
+    width: 45%;
+    font-size: 1.75em;
+  }
+}
+
+@media only screen and (min-width: 78em) {
+  .menu {
+    position: fixed;
+    width: 20%;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .content {
+    margin-left: 20%;
+    width: 80%;
+  }
+  .menu.hide ~ .content {
+    margin-left: 4%;
+    width: 96%;
   }
 }
