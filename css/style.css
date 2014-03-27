@@ -206,6 +206,10 @@ a .menu-item:hover{
   margin: .5em 0;
 }
 
+.latest {
+  padding-bottom: 2em;
+}
+
 .generator {
   width: 65%;
   margin: 0 auto;
