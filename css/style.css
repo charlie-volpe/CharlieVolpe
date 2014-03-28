@@ -14,6 +14,7 @@
 * {
   margin: 0;
   padding: 0;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -35,6 +36,7 @@
   background: #EBB5B5; /* Safari */
   color: white;
 }
+
 ::-moz-selection {
   background: #EBB5B5; /* Firefox */
   color: white;
@@ -77,17 +79,12 @@ p {
 
 .footer {
   text-align: center;
-  padding-top: .5em;
+  padding-top: 1em;
 }
 
-.footer img{
-  width: 1.5em;
-  height: 1.5em;
-}
-
-.footer-item {
-  display: inline-block;
-  padding-right: .5em;
+.footer-icons {
+  width: 232px;
+  margin: 0 auto;
 }
 
 #site-title {
@@ -145,16 +142,84 @@ a .menu-item:hover{
   cursor: pointer;
 }
 
-#menu-icon {
-  width: 2.5em;
-  line-height: 2.5em;
-  float: right;
+#mail-icon,
+#newspaper-icon,
+#linkedin-icon,
+#twitter-icon,
+#github-icon,
+#codepen-icon {
+  float: left;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  display: block;
+  background: url("../img/IconSprite.png");
+  margin-right: 8px;
 }
 
-#menu-icon img {
-  width: 100%;
-  margin-top: .6em;
+#menu-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: block;
+  background: url("../img/IconSprite.png");
+  float: right;
+  background-position:0 -32px;
+  margin-top: 1em;
+  margin-left: .2em;
+}
+
+#menu-icon:hover {
+  background-position:-32px -32px;
+}
+
+#mail-icon {
+  background-position:-64px -32px;
+}
+
+#mail-icon:hover {
+  background-position:-96px -32px;
+}
+
+#newspaper-icon {
+  background-position:0 -64px;
+}
+
+#newspaper-icon:hover {
+  background-position:-32px -64px;
+}
+
+#linkedin-icon {
+  background-position:-64px 0;
+}
+
+#linkedin-icon:hover {
+  background-position:-96px 0;
+}
+
+#twitter-icon {
+  background-position:-64px -64px;
+}
+
+#twitter-icon:hover {
+  background-position:-96px -64px;
+}
+
+#github-icon {
+  background-position:0 0;
+}
+
+#github-icon:hover {
+  background-position: -32px 0;
+}
+
+#codepen-icon {
+  background-position:0 -96px;
+  margin-right: 0;
+}
+
+#codepen-icon:hover {
+  background-position:-32px -96px;
 }
 
 .content {
@@ -208,6 +273,11 @@ a .menu-item:hover{
 
 .latest {
   padding-bottom: 2em;
+}
+
+.latest .third {
+  float: left;
+  width: 100%;
 }
 
 .generator {
@@ -339,7 +409,7 @@ a .menu-item:hover{
   }
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 55em) {
   .menu {
     position: fixed;
     top: 0;
@@ -398,6 +468,15 @@ a .menu-item:hover{
   .polaroid {
     width: 45%;
     font-size: 1.75em;
+  }
+
+  .latest .third {
+    width: 33%;
+    padding-right: .5%;
+  }
+
+  .latest .third.last {
+    padding-right: 0;
   }
 }
 

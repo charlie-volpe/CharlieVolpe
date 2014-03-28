@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Charlie Volpe</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -12,7 +13,7 @@
     <div class="menu hide">
       <div class="header">
         <a href="#" id="site-title">Charlie Volpe</a>
-        <a id="menu-icon"><img alt="menu" src="img/list.svg"></a>
+        <a id="menu-icon"></a>
       </div>
 
       <div class="items clearfix">
@@ -23,12 +24,14 @@
       </div>
 
       <div class="footer">
-        <a href="mailto:volpegames@gmail.com" class="footer-item"><img alt="mail" id="mail-icon" src="img/mail.svg" target="_blank"></a>
-        <a href="files/CharlieVolpeResume.pdf" target="_blank" class="footer-item"><img alt="newspaper" id="newspaper-icon" src="img/newspaper.svg"></a>
-        <a href="http://www.linkedin.com/in/charlievolpe/" target="_blank" class="footer-item"><img alt="linkedin" id="linkedin-icon" src="img/linkedin.svg"></h3></a>
-        <a href="https://twitter.com/charlie_volpe" target="_blank" class="footer-item"><img alt="twitter" id="twitter-icon" src="img/twitter.svg"></a>
-        <a href="https://github.com/charlie-volpe" target="_blank" class="footer-item"><img alt="github" id="github-icon" src="img/github.svg"></a>
-        <a href="http://codepen.io/charlie-volpe/" target="_blank" class="footer-item"><img alt="codepen" id="codepen-icon" src="img/codepen.png"></a>
+        <div class="footer-icons">
+          <a id="mail-icon" href="mailto:volpegames@gmail.com"></a>
+          <a id="newspaper-icon" href="files/CharlieVolpeResume.pdf" target="_blank"></a>
+          <a id="linkedin-icon" href="http://www.linkedin.com/in/charlievolpe/" target="_blank"></a>
+          <a id="twitter-icon" href="https://twitter.com/charlie_volpe" target="_blank"></a>
+          <a id="github-icon" href="https://github.com/charlie-volpe" target="_blank"></a>
+          <a id="codepen-icon" href="http://codepen.io/charlie-volpe/" target="_blank"></a>
+        </div>
       </div>
     </div>
 
@@ -41,12 +44,34 @@
         </div>
 
         <div class="clearfix">
-          <div class="personal-info">
-            <h2>About</h2>
-            <p class="personal-item">I studied at the Art Institute of California - San Francisco, where I graduated with a Bachelors of Science in Game Art &amp; Design. I currently live in the San Francisco Bay Area, CA.</p>
-            <p class="personal-item">I spent the last two years evolving in my learning and knowledge, working at a startup called, Tall Chair. Starting as a Technical Artist, moving into an Engineer role working on the Active Reader tool and finishing up as their in house UX Designer &amp; Programmer.</p>
-            <p class="personal-item">I am not ready to stop learning. I want my next position to be somewhere that I can grow. Let's learn together!</p>
+          <h2>Work</h2>
+          <div class="interest">
+            <h4>Fisher-Price</h4>
+            <hr>
+            <p>Tall Chair produced two interactive comics for Fisher-Price while I was working there. I will show both of them and what my role on the project was for each.</p>
+            <a href="work/fisher-price">More Info...</a>
           </div>
+          <div class="interest">
+            <h4>Disney • Pixar</h4>
+            <hr>
+            <p>There were several interactive comics apps that Tall Chair produced for Disney - Pixar. I show all of them and what my role on the project was for each one. This was the bulk of the projects I worked on at Tall Chair.</p>
+            <a href="work/disney-pixar">More Info...</a>
+          </div>
+          <div class="interest">
+            <h4>Hipmunk Tours</h4>
+            <hr>
+            <p>This was my final project for my UX Design course at General Assembly. My project adds a new tour finding feature on to the Hipmunk Mobile app.</p>
+            <a href="work/hipmunk-tours">More Info...</a>
+          </div>
+          <div class="interest last">
+            <h4>Active Reader</h4>
+            <hr>
+            <p>In this page I go into depth about one of the major User Experience designs I created and show the implementation. This is only one of the many things I worked on to help improve the functionality and design of the Active Reader tool.</p>
+            <a href="work/active-reader">More Info...</a>
+          </div>
+        </div>
+
+        <div class="clearfix">
           <div class="skills">
             <h2>Skills</h2>
             <h4>UX Design</h4>
@@ -88,40 +113,31 @@
               <div class="skill-fill seven"></div>
             </div>
           </div>
-        </div>
-
-        <div class="clearfix">
-          <h2>Work</h2>
-          <div class="interest">
-            <h4>Fisher-Price</h4>
-            <hr>
-            <p>Tall Chair produced two interactive comics for Fisher-Price while I was working there. I will show both of them and what my role on the project was for each.</p>
-            <a href="work/fisher-price" target="_blank">More Info...</a>
-          </div>
-          <div class="interest">
-            <h4>Disney • Pixar</h4>
-            <hr>
-            <p>There were several interactive comics apps that Tall Chair produced for Disney - Pixar. I show all of them and what my role on the project was for each one. This was the bulk of the projects I worked on at Tall Chair.</p>
-            <a href="work/disney-pixar" target="_blank">More Info...</a>
-          </div>
-          <div class="interest">
-            <h4>Hipmunk Tours</h4>
-            <hr>
-            <p>This was my final project for my UX Design course at General Assembly. My project adds a new tour finding feature on to the Hipmunk Mobile app.</p>
-            <a href="work/hipmunk-tours" target="_blank">More Info...</a>
-          </div>
-          <div class="interest">
-            <h4>Active Reader</h4>
-            <hr>
-            <p>In this page I go into depth about one of the major User Experience designs I created and show the implementation. This is only one of the many things I worked on to help improve the functionality and design of the Active Reader tool.</p>
-            <a href="work/active-reader" target="_blank">More Info...</a>
+          <div class="personal-info">
+            <h2>About</h2>
+            <p class="personal-item">I spent the last two years evolving in my learning and knowledge, working at a startup called, Tall Chair. Starting as a Technical Artist, moving into an Engineer role working on the Active Reader tool and finishing up as their in house UX Designer &amp; Programmer.</p>
+            <p class="personal-item">I studied at the Art Institute of California - San Francisco, where I graduated with a Bachelors of Science in Game Art &amp; Design. I currently live in the San Francisco Bay Area, CA.</p>
+            <p class="personal-item">I am not ready to stop learning. I want my next position to be somewhere that I can grow. Let's learn together!</p>
+            <p class="personal-item">
+              <a href="files/CharlieVolpeResume.pdf">Check out my resume here or in the menu.</a>
+            </p>
           </div>
         </div>
 
-        <h2 style="padding-bottom: .5em;">Latest Codepen</h2>
-        <div class="latest">
-          <p data-height="386" data-theme-id="4726" data-slug-hash="Ipsaz" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/charlie-volpe/pen/Ipsaz/'>Bouncing Ball</a> by Charlie Volpe (<a href='http://codepen.io/charlie-volpe'>@charlie-volpe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-          <script async src="http://codepen.io/assets/embed/ei.js"></script>
+        <h2 style="padding-bottom: .5em;">Latest Codepens</h2>
+        <div class="latest clearfix">
+          <div class="third">
+            <p data-height="386" data-theme-id="4726" data-slug-hash="tmCqK" data-default-tab="result" data-animations="run" class='codepen'>See the Pen <a href='http://codepen.io/charlie-volpe/pen/tmCqK/'>Animated Menu Bubbles</a> by Charlie Volpe (<a href='http://codepen.io/charlie-volpe'>@charlie-volpe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+            <script async src="http://codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <div class="third">
+            <p data-height="386" data-theme-id="4726" data-slug-hash="Ipsaz" data-default-tab="result" data-animations="run" class='codepen'>See the Pen <a href='http://codepen.io/charlie-volpe/pen/Ipsaz/'>Bouncing Ball</a> by Charlie Volpe (<a href='http://codepen.io/charlie-volpe'>@charlie-volpe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+            <script async src="http://codepen.io/assets/embed/ei.js"></script>
+          </div>
+          <div class="third last">
+            <p data-height="386" data-theme-id="4726" data-slug-hash="HbymI" data-default-tab="result" data-animations="run" class='codepen'>See the Pen <a href='http://codepen.io/charlie-volpe/pen/HbymI/'>Full Site Redesign</a> by Charlie Volpe (<a href='http://codepen.io/charlie-volpe'>@charlie-volpe</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+            <script async src="http://codepen.io/assets/embed/ei.js"></script>
+          </div>
         </div>
 
         <div class="clearfix">
